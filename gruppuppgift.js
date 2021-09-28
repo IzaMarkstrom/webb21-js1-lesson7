@@ -78,7 +78,7 @@ function onBuyButtonClick() {
     const coffeeType = coffees[coffeeTypeValue-1].name
     const coffePrice = coffees[coffeeTypeValue-1].price
     const numberCoffees = document.getElementById("numberOfCoffees").value
-    const ErrorRespons = document.getElementById("errorMessage") // Not used yet
+    const ErrorRespons = document.getElementById("errorMessage") // Not used yet. Will add error message.
 
     const transaction = {type:coffeeType, price:coffePrice, number:numberCoffees}
     customer.addTransaction(transaction)
