@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Gruppuppgift - coffeeshop</title>
+</head>
+<body>
+    <div>
+        <label for="coffee">Välj kaffesort: </label>
+        <select name="coffee" id="coffee">
+            <option value="1" selected>Brygg kaffe - 20kr</option> <!--Kommer att visas först-->
+            <option value="2">Cappuccino - 30kr</option>
+            <option value="3">Latte - 40kr</option>  
+        </select>
+        
+        <label for="numberOfCoffees">Antal: </label>
+        <input id="numberOfCoffees" name="numberOfCoffees" type="text"/> <!--Tar emot antalet koppar kaffe-->
+        <button onclick="onBuyButtonClick()">Köp</button>
+        <p id="errorMessage"></p>
+        <p id="bought"></p>
+        <p id="membership"></p>
+        <hr>
+
+    </div>
+    <h1>Dina transaktioner</h1>
+    <div>
+        <p id="message"></p>
+    </div>
+
+
+    <script src="gruppuppgift.js"></script>
+</body>
+</html>
