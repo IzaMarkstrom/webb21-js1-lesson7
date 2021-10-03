@@ -32,7 +32,7 @@ class Customer {
     * @param {numberCoffees} The number of coffees transaction.
     * @return {cost} The total cost of those coffees.
     */
-     costPerTransaction(coffeePrice, numberCoffees){
+     setCostPerTransaction(coffeePrice, numberCoffees){
         let cost = 0
         return cost += coffeePrice*numberCoffees
     }
@@ -41,17 +41,17 @@ class Customer {
     * Calculate the total cost of all transactions.
     *
     * @param {total} The total cost per purchase.
-    * @return {total1} The total cost for all transactions
+    * @return {total1} The total cost for all transactions.
     */
-     totalCost(total){
+     getTotalCost(total){
         return total1 += total
     }
 
     /**
     * Calculate the total cups per transaction.
     *
-    * @param {cups} The desired diameter of the circle.
-    * @return {totalCups1} The new Circle object.
+    * @param {cups} The total cups per purchase.
+    * @return {totalCups1} The total cups for all transactions.
     */
     totalCups(cups){
         return totalCups1 += parseInt(cups)
@@ -85,8 +85,8 @@ function onBuyButtonClick() {
 
     customer.totalCups(numberCoffees)
 
-    const totalCostPerTransaction = customer.costPerTransaction(coffePrice, numberCoffees)
-    const totalCost = customer.totalCost(totalCostPerTransaction)
+    const totalCostPerTransaction = customer.setCostPerTransaction(coffePrice, numberCoffees)
+    const totalCost = customer.getTotalCost(totalCostPerTransaction)
 
     
 
